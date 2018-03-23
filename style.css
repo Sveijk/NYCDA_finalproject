@@ -1,0 +1,255 @@
+body {
+  background-color: #ffffff/*#00cc00*/;
+  color: #000000 /*#ffffff*/;
+  font: 15px/1.5 Comic Sans MS, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+	overflow: hidden;
+	margin: auto;
+	width: 80%;
+}
+
+.container a {
+	color: #000000;
+	text-decoration: none;
+}
+
+h1 {
+  color: #9900cc;
+  font-family: /*'Lobster',*/ 'Comic Sans MS', serif;
+  font-size: 32px;
+  text-shadow: white 1px 0 3px; /* this is a white shadow */
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header section */
+header {
+	color: #000000 /*#ffffff*/;
+	min-height: 70px;
+	padding-top: 30px;
+}
+
+header a { 
+	color: #000000 /*#ffffff*/;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+header li {
+	display: inline;
+	float: left;
+	padding: 0 20px 0 20px;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1 {
+	margin: 0;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a {
+	font-family: 'Comic Sans MS';
+	color: #00cc00;
+}
+
+header a:hover {
+	color: #9900cc;
+}
+
+/* Showcase */
+#showcase { 
+	background-size: cover;
+	color: #000000 /*#ffffff*/;
+	min-height: 400px;
+	text-align: center;
+}
+
+#showcase h1 {
+	font-size: 55px;
+	margin-bottom: 10px;
+	margin-top: 100px;
+}
+
+#showcase h3 {
+	color: #9900cc;
+	font-family: 'Comic Sans MS', sans-serif;
+	font-size: 33px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+#showcase p {
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: auto;
+	text-align: center;
+	width: 45%;
+}
+
+#showcase h4 {
+	font-family: sans-serif;
+}
+
+/* boxes */
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box {
+	float: left;
+	text-align: center; 
+	width: 33%;
+	padding: 10px;
+}
+
+#boxes h3 {
+	font-family: 'Comic Sans MS', sans-serif;
+	font-size: 33px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+#boxes p {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+/* footer */
+footer {
+	background-color: #00cc00;
+	color: #ffffff;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	text-shadow: #9900cc 1px 0 3px; /* this is a purple shadow */
+}
+
+/* using media queries to make it responsive */
+@media(max-width: 768px) { /* CSS code for small screen sizes */
+	header #branding,
+	header nav,
+	header nav li,
+	#boxes .box {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header {
+		padding-bottom: 20px;
+	}
+
+	#showcase h1 {
+		margin-top: 40px;
+	}
+
+	#showcase p {
+		width: 100%;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#responsive {
+	line-height: 0;
+
+	-webkit-column-count: 5;
+	-webkit-column-gap: 0px;
+	-moz-column-count: 5;
+	-moz-column-gap: 0px;
+	column-count: 5;
+	column-gap: 0px;
+}
+
+#responsive img {
+	width: 100% !important;
+	height: auto !important;
+}
+
+@media(max-width: 1200px) {
+	#responsive {
+		-moz-column-count: 4;
+		-webkit-column-count: 4;
+		column-count: 4;
+	}
+}
+
+@media(max-width: 1000px) {
+	#responsive {
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
+/*		margin: 6px 0;*/
+	}
+/*	.files {
+		width: 49.9995%;
+	}*/
+}
+
+@media(max-width:800px) {
+	#responsive {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;	
+	}
+/*		width: 100%; 
+	}
+
+	.files {
+		width: 100%;
+	}*/
+}
+
+@media(max-width: 400px) {
+	#responsive { 
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+  }
+}
+
+/* #gallery for the images roedel dogs 
+div .gallery {
+	border: 1px;
+}
+*/
+
+
+
+
+/*.files {
+	display: inline-block;
+	margin: 1em 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	width: 100%;
+}*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both; 
+}
+
+.form {
+	text-align: center;
+}

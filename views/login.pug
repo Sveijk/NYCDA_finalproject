@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Login
+  body
+    h1 Please log in!
+    form(method="post" action="/login")
+      div
+        input(type="email" name="email" placeholder="Your e-mail" required)
+      div
+        input(type="password" name="password" placeholder="Your password" required)
+      div
+        button(type="submit") Log in!
+
+    if errorMessage
+      div(style="color: red;")= errorMessage

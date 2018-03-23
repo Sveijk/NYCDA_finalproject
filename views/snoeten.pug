@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    div(id="showcase")
+      h3 Roedelmaatjes
+        p Lootah - Trend - Lootah - Trend - Lootah - Trend - Lootah - Trend - Lootah 
+      h3 Smoelenboek
+
+    div(id="responsive")
+    each image in images 
+        div(class="item")
+        //- div(class="gallery") 
+        //
+        a(target="_blank" href=`/uploads/${image}`)
+        img(src=`/uploads/${image}`)
+        //- each dogname in dogNameInfo
+          div
+           a(href=`/dog/${photos.id}`)= dogname.dog_name | #{dogname.date_opened}
+        //
+
+    div(class="clearfix")
+    br
+    form(method="post" enctype="multipart/form-data" id="uploadForm" class="form" action="/smoelenboek")
+      input(type="text" name="dogName" placeholder="Naam van Roedelmaatje" required)
+      input(type="file" id="file" name="userFile")
+      input(type="submit" value="bestand toevoegen" name="submit")
+    
